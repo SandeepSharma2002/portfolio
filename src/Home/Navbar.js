@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container">
         <div className="brand-and-toggler">
-          <Link to="/portfolio/" className="navbar-brand">
+          <Link to="/portfolio" className="navbar-brand">
             Sandeep
           </Link>
           <button 
