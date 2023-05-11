@@ -1,0 +1,122 @@
+.home{
+    padding: 5rem 0 2.5rem 0;
+}
+.home .row > div{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(41 41 41);
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+.home .row-left{
+    text-align: center;
+}
+.home .row-left h3{
+    color: var(--green);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.home .row-left h1{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 900;
+}
+.home .row-left h1 span{
+    color: var(--green);
+}
+.home .row-left h2{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+.home-pg-btn{
+    display: flex;
+    margin: 1rem 0;
+}
+.home-pg-btn button{
+    padding: 0.8rem;
+    margin-right: 0.6rem;
+    border: 1px solid #f7f7f7;
+}
+.home-pg-btn button:first-child{
+    border-color: var(--green);
+}
+.home-pg-btn button:last-child{
+    background: transparent;
+    border: 0.5px solid black;
+    color: var(--pri_font);
+}
+.home .img-container{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.home .img-border{
+    background: var(--nero);
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 500px){
+
+    .home .row-left h1{
+        font-size: 3.5rem;
+    }
+    .home .row-left h2{
+        font-size: 1.4rem;
+    }
+    .home-pg-btn button{
+        padding: 1rem 1.5rem;
+    }
+    .home .img-container{
+        width: 320px;
+        height: 320px;
+    }
+    .home .img-border{
+        width: 325px;
+        height: 325px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .home .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    .home .row > div{
+        height: calc(100vh - 73px);
+        border: none;
+        margin: 0;
+        align-items: flex-start;
+    }
+    .home .row-left{
+        text-align: left;
+    }
+    .home .img-container{
+        width: 100%;
+        height: 100%;
+        border-radius: unset;
+    }
+    .home .img-border{
+        height: 90%;
+        width: 100%;
+        transition: var(--transition);
+        border-radius: unset;
+        background: transparent;
+    }
+    .home .img-border:hover{
+        transform: translateY(-14px);
+    }
+}
+
