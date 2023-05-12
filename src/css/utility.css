@@ -70,20 +70,22 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--pri_font);;
     line-height: 1.7;
 }
-/*Simple css to style it like a toggle switch*/
+/*toggle switch*/
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    margin-top: 1.2rem;
+    /* margin-top: 1rem; */
     z-index: 1000;
     position: fixed;
     margin-left: 10px;
+    /* overflow: hidden; */
   }
   .theme-switch {
     display: inline-block;
     height: 34px;
     position: relative;
     width: 60px;
+    margin: 5.5px 0px;
   }
   
   .theme-switch input {
@@ -172,6 +174,14 @@ h1, h2, h3, h4, h5, h6, p{
     .container{
         width: 88vw;
     }
+}
+
+@media screen and (max-width: 992px){
+        .theme-switch-wrapper {
+            display: flex;
+            justify-content: center;
+            position: static;
+           } 
 }
 @media screen and (min-width: 1200px){
     .container{

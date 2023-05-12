@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link,NavLink } from "react-router-dom";
 import "./Navbar.css";
+import Utility from "../css/Utility";
 export default function Navbar() {
   const [ToggleClass, setToggleClass] = useState(false);
   const toggle = () => {
@@ -64,6 +65,9 @@ export default function Navbar() {
               <NavLink to="/contact"  className="nav-link">
                 Contact
               </NavLink>
+            </li>
+            <li >
+              <Utility />
             </li>
           </ul>
         </div>

@@ -20,7 +20,6 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Utility />
       <Routes>
       <Route path="/" element={<Home />} />
         <Route exact path="portfolio" element={<Home />} />
